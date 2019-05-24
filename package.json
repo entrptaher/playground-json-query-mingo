@@ -1,0 +1,13 @@
+{
+  "name": "jquery",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@theledger/couchdb-query-engine": "^2.4.4",
+    "jq": "^1.7.2",
+    "lodash": "^4.17.11",
+    "mingo": "^2.3.5",
+    "underscore": "^1.9.1"
+  }
+}
