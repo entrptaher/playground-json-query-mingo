@@ -47,7 +47,7 @@ Here is the result:
 
 ### query
 
-**Warning! Beyond this point, it gets really complex. Caution adviced.**
+**Warning! Beyond this point, it gets really complex. Caution adviced. You probably don't need these.**
 
 The `query` filter takes a stringified json. Consider the following query,
 
@@ -76,18 +76,20 @@ So now the query becomes:
 
 You can probably implement all other type of filter based on the above logic.
 
-For example, with Regex:
+For example, filter all element which has name with letter `a`, with Regex:
 
 ```js
-RegExp.prototype.toJSON = RegExp.prototype.toString;
-JSON.stringify(JSON.stringify({ name: { $regex: /\d+/ } }));
-// "{\"name\":{\"$regex\":\"/\\\\d+/\"}}"
+JSON.stringify(JSON.stringify({ name: { $regex: "a" } }))
+// "{\"name\":{\"$regex\":\"a\"}}"
 ```
 
 The query becomes:
 
 ```graphql
 {
-  people(query: "{\"name\":{\"$regex\":\"/\\\\d+/\"}}")
+  people(query: "{\"name\":{\"$regex\":\"a\"}}")
 }
 ```
+
+Result:
+![](https://i.imgur.com/JMlvNZX.png)
