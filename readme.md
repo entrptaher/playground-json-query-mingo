@@ -1,4 +1,4 @@
-Prisma does not have any JSON filter (See this [issue](https://github.com/prisma/prisma/issues/148)). This repo is to showcase a way to filter the JSON data using mingo.
+Prisma does not have any JSON filter (See this [issue](https://github.com/prisma/prisma/issues/148)). This repo is to showcase a way to filter the JSON data using [mingo](https://github.com/kofrasa/mingo).
 
 ---
 
@@ -93,3 +93,5 @@ The query becomes:
 
 Result:
 ![](https://i.imgur.com/JMlvNZX.png)
+
+To understand what kind of filter you can probably use, check the [mingo](https://github.com/kofrasa/mingo) repository.
