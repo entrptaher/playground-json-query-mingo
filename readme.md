@@ -3,6 +3,7 @@ Prisma does not have any JSON filter (See this [issue](https://github.com/prisma
 ---
 
 # How it works?
+We create a minimal graphql server with `graphql-yoga`, however it could be express or anything else. It has one query which returns json data.
 
 ### Generate Fake Data
 fakeData generates 5 to 20 fake objects so we don't need a database to test out how it works.
@@ -16,6 +17,14 @@ It has `skip` and `first` just like we need in a prisma/graphql filter.
 It has a simple query `people` which takes a schemaless raw JSON data. The data can be anything but since we are trying to filter, we assume it's an array (of objects).
 
 ### Sample Query
+Fetch all results
+```graphql
+{
+  people
+}
+```
+
+Fetch result with some filter
 ```graphql
 {
   people(first: 2, skip: 1)
@@ -26,3 +35,5 @@ This query skips the first element and then returns 2 results. In prisma, `first
 
 Here is the result:
 ![](https://i.imgur.com/9eEYQhw.png)
+
+You can probably implement all other type of filter based on the above logic.
