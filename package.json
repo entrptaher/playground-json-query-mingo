@@ -1,4 +1,13 @@
 {
+  "name": "playground-json-query-mingo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/entrptaher/playground-json-query-mingo",
+  "author": "Md. Abu Taher <entrptaher@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
   "dependencies": {
     "faker": "^4.1.0",
     "graphql-yoga": "^1.17.4",

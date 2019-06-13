@@ -1,5 +1,5 @@
 scalar JSON
 
 type Query {
-  people(first: Int, skip: Int, last: Int): JSON!
+  people(first: Int, skip: Int): JSON!
 }
