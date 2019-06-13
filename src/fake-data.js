@@ -1,5 +1,6 @@
 const faker = require("faker");
 
+// Based on this comment https://github.com/Marak/faker.js/issues/399#issuecomment-433090692
 // random generator
 const generator = (schema, min = 1, max) => {
   max = max || min
