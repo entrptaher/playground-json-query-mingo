@@ -50,6 +50,7 @@ Here is the result:
 **Warning! Beyond this point, it gets really complex. Caution adviced. You probably don't need these.**
 
 **simple example**
+
 The `query` filter takes a stringified json. Consider the following query you would do on **mongodb**,
 
 ```js
@@ -78,6 +79,7 @@ So now the query becomes:
 You can probably implement all other type of filter based on the above logic.
 
 **more example**
+
 For example, filter all element which has name with letter `a`, with Regex:
 
 ```js
