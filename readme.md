@@ -28,7 +28,7 @@ Fetch all results
 
 filterData is simply a function that takes the fake data and applies mongodb like cursor.
 
-### skip and first
+### `skip` and `first`
 
 It has `skip` and `first` just like we need in a prisma/graphql filter.
 
@@ -45,11 +45,11 @@ This query skips the first element and then returns 2 results. In prisma, `first
 Here is the result:
 ![](https://i.imgur.com/9eEYQhw.png)
 
-### query
+### `query`
 
 **Warning! Beyond this point, it gets really complex. Caution adviced. You probably don't need these.**
 
-**simple example**
+**Example**
 
 The `query` filter takes a stringified json. Consider the following query you would do on **mongodb**,
 
@@ -78,7 +78,7 @@ So now the query becomes:
 
 You can probably implement all other type of filter based on the above logic.
 
-**more example**
+**Another Example**
 
 For example, filter all element which has name with letter `a`, with Regex:
 
