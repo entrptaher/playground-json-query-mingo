@@ -8,6 +8,8 @@ module.exports = function({
   first = 0
 }) {
   try {
+    if (typeof query === "string") query = JSON.parse(query);
+    if (typeof projection === "string") projection = JSON.parse(projection);
     const cursor = mingo.find(data, query, projection);
 
     // filter and modifiers
