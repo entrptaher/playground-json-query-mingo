@@ -1,0 +1,1 @@
+Prisma does not have any JSON filter (See this [issue](https://github.com/prisma/prisma/issues/148)). This repo is to showcase a way to filter the JSON data using mingo.
